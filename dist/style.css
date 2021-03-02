@@ -14,7 +14,7 @@ li {
 }
 
 body {
-  background: #efefef;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-  background: white;
+  background: #efefef;
   display: inline-flex;
   flex-direction: column;
   padding: 20px;
