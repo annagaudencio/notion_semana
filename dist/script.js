@@ -19,7 +19,7 @@ new Vue({
   data: {
     month: "",
     week: [],
-    days: ["Mon", "Tues", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    days: ["Seg", "Ter", "Qua", "Qui", "Sex", "Sab", "Dom"],
     today: 0
   },
   methods: {
