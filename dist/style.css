@@ -14,7 +14,7 @@ li {
 }
 
 body {
-  background: #f7e7e3;
+  background: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,12 +22,13 @@ body {
 }
 
 .container {
-  background: #fff;
+  background: white;
   display: inline-flex;
   flex-direction: column;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 10px;
+  border: solid 1px #F2E2D9;
 }
 
 .grid {
@@ -38,7 +39,7 @@ body {
 }
 
 .day-grid {
-  color: #666;
+  color: #A66037;
   grid-template-rows: 30px;
   margin-bottom: 5px;
   font-size: 13px;
@@ -47,6 +48,7 @@ body {
 .date-grid {
   grid-template-rows: 30px;
   font-size: 14px;
+  color: #848484;
 }
 
 .date-grid-item,
