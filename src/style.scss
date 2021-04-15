@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
-
-$red: #fe6666;
-
 * {
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
@@ -17,7 +14,7 @@ li {
 }
 
 body {
-  background: #efefef;
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,6 +28,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 10px;
+  border: solid 1px #F2E2D9;
 }
 
 .grid {
@@ -41,7 +39,7 @@ body {
 }
 
 .day-grid {
-  color: #666;
+  color: #A66037;
   grid-template-rows: 30px;
   margin-bottom: 5px;
   font-size: 13px;
@@ -50,6 +48,7 @@ body {
 .date-grid {
   grid-template-rows: 30px;
   font-size: 14px;
+  color: #848484;
 }
 
 .date-grid-item,
@@ -63,22 +62,20 @@ body {
 
 .highlight {
   border-radius: 20px;
-  // border: 1px solid #f827b3;
   padding: 5px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  &:before {
-    position: absolute;
-    content: "";
-    width: 5px;
-    height: 5px;
-    background: $red;
-    border-radius: 100%;
-    bottom: -5px;
-  }
+}
+.highlight:before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #fe6666;
+  border-radius: 100%;
+  bottom: -5px;
 }
 
 .modal {
