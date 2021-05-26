@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
+
+$red: #fe6666;
+
 * {
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
@@ -14,7 +17,7 @@ li {
 }
 
 body {
-  background: #fff;
+  background: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,25 +25,25 @@ body {
 }
 
 .container {
-  background: #fff;
+  background: white;
   display: inline-flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
   margin-bottom: 10px;
-  border: solid 0px #F2E2D9;
+  border: solid 1px #f2e2d9;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(7, 70px);
+  grid-template-columns: repeat(7, 45px);
   justify-items: center;
   align-items: center;
 }
 
 .day-grid {
-  color: #132f4a;
-  grid-template-rows: 30px;
+  color: #a66037;
+  grid-template-rows: 20px;
   margin-bottom: 5px;
   font-size: 13px;
 }
@@ -62,20 +65,22 @@ body {
 
 .highlight {
   border-radius: 20px;
+  // border: 1px solid #f827b3;
   padding: 5px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.highlight:before {
-  position: absolute;
-  content: "";
-  width: 5px;
-  height: 5px;
-  background: #fe6666;
-  border-radius: 100%;
-  bottom: -5px;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: $red;
+    border-radius: 100%;
+    bottom: -5px;
+  }
 }
 
 .modal {
@@ -83,14 +88,14 @@ body {
   background: white;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   font-size: 14px;
   color: #555;
   position: absolute;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 450px) {
   .container {
     flex-direction: row;
   }
@@ -100,3 +105,4 @@ body {
     grid-template-rows: repeat(7, 70px);
   }
 }
+
